@@ -1,0 +1,19 @@
+{
+  "name": "adv-type",
+  "version": "1.0.0",
+  "description": "A site that demos custom fonts",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Lanh Nguyen",
+      "email": "lanhn52@gmail.com"
+    },
+    {
+      "name": "Aaron Russell",
+      "email": "russell.aaron94@gmail.com"
+    }
+  ],
+  "scripts": {
+    "generate": "node generate-font-faces.js"
+  }
+}
