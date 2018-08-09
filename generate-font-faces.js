@@ -2,7 +2,8 @@ const fs = require('fs');
 const process = require('process');
 
 const fontsDirectory = 'fonts';
-const outputFilename = 'font-faces.css';
+const cssOutputFilename = 'font-faces.css';
+const jsOutputFilename = 'font-faces.js';
 
 const generateCss = filenames => {
   // Generate a @font-face rule for each of the font files.
@@ -14,7 +15,7 @@ const generateCss = filenames => {
   );
 
   // Write each of the generated font faces to a CSS file.
-  const fileOutputStream = fs.createWriteStream(outputFilename);
+  const fileOutputStream = fs.createWriteStream(cssOutputFilename);
   fontFaceRules.forEach((fontFaceRule, index) => {
     fileOutputStream.write(fontFaceRule);
 
@@ -30,8 +31,26 @@ const generateCss = filenames => {
 };
 
 const generateJs = filenames => {
-  // TODO: Implement something that creates a JS array of fontnames that can be imported into React components.
-  console.log(filenames);
+  // Get the font names (minus the .ttf extension).
+  const fontNames = filenames.map(filename => filename.substring(0, filename.length - 4));
+
+  // Write the font names to a JavaScript file that exports an array of the names.
+  const fileOutputStream = fs.createWriteStream(jsOutputFilename);
+  fileOutputStream.write('export default [\n');
+
+  fontNames.forEach((fontName, index) => {
+    fileOutputStream.write(`  ${fontName}`);
+
+    // Add newlines between font names as well as commas unless we're iterating over the last font name.
+    if (index === fontNames.length - 1) {
+      fileOutputStream.write('\n');
+    } else {
+      fileOutputStream.write(',\n');
+    }
+  });
+
+  fileOutputStream.write('];\n');
+  fileOutputStream.end();
 };
 
 fs.readdir(fontsDirectory, (err, filenames) => {
