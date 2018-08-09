@@ -39,7 +39,7 @@ const generateJs = filenames => {
   fileOutputStream.write('export default [\n');
 
   fontNames.forEach((fontName, index) => {
-    fileOutputStream.write(`  ${fontName}`);
+    fileOutputStream.write(`  '${fontName}'`);
 
     // Add newlines between font names as well as commas unless we're iterating over the last font name.
     if (index === fontNames.length - 1) {
