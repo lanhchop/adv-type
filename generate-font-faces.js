@@ -3,7 +3,7 @@ const process = require('process');
 
 const fontsDirectory = 'fonts';
 const cssOutputFilename = 'font-faces.css';
-const jsOutputFilename = 'font-faces.js';
+const jsOutputFilename = 'src/font-names.js';
 
 const generateCss = filenames => {
   // Generate a @font-face rule for each of the font files.
