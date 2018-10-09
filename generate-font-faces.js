@@ -30,29 +30,6 @@ const generateCss = filenames => {
   fileOutputStream.end();
 };
 
-const generateJs = filenames => {
-  // Get the font names (minus the .ttf extension).
-  const fontNames = filenames.map(filename => filename.substring(0, filename.length - 4));
-
-  // Write the font names to a JavaScript file that exports an array of the names.
-  const fileOutputStream = fs.createWriteStream(jsOutputFilename);
-  fileOutputStream.write('export default [\n');
-
-  fontNames.forEach((fontName, index) => {
-    fileOutputStream.write(`  '${fontName}'`);
-
-    // Add newlines between font names as well as commas unless we're iterating over the last font name.
-    if (index === fontNames.length - 1) {
-      fileOutputStream.write('\n');
-    } else {
-      fileOutputStream.write(',\n');
-    }
-  });
-
-  fileOutputStream.write('];\n');
-  fileOutputStream.end();
-};
-
 fs.readdir(fontsDirectory, (err, filenames) => {
   if (err) {
     console.error(`Failed to read the contents of '${fontsDirectory}.'`, err);
@@ -62,8 +39,8 @@ fs.readdir(fontsDirectory, (err, filenames) => {
   // Ignore files that aren't TTFs.
   const ttfFilenames = filenames.filter(filename => {
     const extension = filename.substring(filename.lastIndexOf('.') + 1);
-    if (!/ttf$/ig.test(extension)) {
-      console.warn(`'${filename}' is not a TTF file and will be ignored.`);
+    if (!/(ttf|otf)$/ig.test(extension)) {
+      console.warn(`'${filename}' is not a TTF or OTF file and will be ignored.`);
       return false;
     } else {
       return true;
@@ -71,5 +48,4 @@ fs.readdir(fontsDirectory, (err, filenames) => {
   });
 
   generateCss(filenames);
-  generateJs(filenames);
 });

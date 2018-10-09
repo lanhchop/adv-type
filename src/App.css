@@ -1,28 +1,165 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+body{
+  background: black;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.header {
+  background-color:#AE03FF;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 110px;
+  padding: 0 100px;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
-.App-intro {
-  font-size: large;
+.about{
+  color: rgba(255, 255, 255, 0.5);
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.description{
+  width: 484px;
+  height: 90px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 16px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fontContainer{
+  padding: 0 100px;
+}
+
+.fontDescript{
+  margin: 20px 0;
+  font-family: Roboto;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fontDetails{
+  font-family: Roboto;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fontFamily{
+  font-family:Roboto;
+  font-size:16px;
+}
+
+.fontPreview{
+  border-right: 3px solid rgba(255, 255, 255, 0.7);
+  font-size: 192px;
+  color: #FFFFFF;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-top:40px;
+}
+
+.fontSize-1:before{
+  content: "192 points";
+  font-family: Roboto;
+  font-size: 12px;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.fontSize-2:before{
+  content: "24 points";
+  font-family: Roboto;
+  font-size: 12px;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 107px;
+  margin: 19px 0;
+  padding: 0 97px 0 0;
+}
+
+.sampleText{
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  overflow-y: auto;
+  color: #FFFFFF;
+  float: right;
+  height: 192px;
+  margin-bottom: 40px;
+  line-height: 28px;
+}
+
+
+/* ------------------------------------------ */
+
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-color:#AE03FF;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 70px;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  
+  .about{
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+  }
+
+  .fontContainer{
+    padding: 0 15px;
+  }
+  
+  .fontDetails{
+    font-family: Roboto;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .fontFamily{
+    font-family:Roboto;
+    font-size:16px;
+  }
+  
+  .fontPreview{
+    border-right: 3px solid rgba(255, 255, 255, 0.7);
+    max-width: 290px;
+    font-size: 96px;
+    color: #FFFFFF;
+    overflow-x: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  .fontSize-1:before{
+    content: "96 points";
+  }
+  
+  .grid-container{
+    display: grid;
+    grid-template-columns:auto;
+    column-gap: 0px;
+    margin: 19px 0;
+    padding: 0 0 0 0;
+  }
+  
+  .sampleText{
+    width: 305;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    overflow-y: auto;
+    height: 190px;
+    color: #FFFFFF;
+    margin:15px 0;
+    padding-bottom: 0;
+  }
 }

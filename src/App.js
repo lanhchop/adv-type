@@ -1,21 +1,46 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import fonts from './font-details.json';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <React.Fragment>
+    <div className="header">
+      <span>Boise State GDes Typography</span>
+      <a className="about" href="https://wwww.google.com/" onClick={( ) => console.log("CLICK")}>About</a>
+    </div>
+    <div>
+      {fonts.map((font, index) => (
+        <div className="fontContainer" key={index}>
+
+          <div className="fontFamily">{font.fontFamily}</div>
+          <div className="fontDetails">{font.author} -- {font.year} -- {font.course}</div>
+          <div className="grid-container">
+            <div>
+              <div className="fontPreview" style={{ fontFamily: font.fontFamily }}>
+              {font.availChars}
+              </div>
+              <div className="fontSize-1">
+              </div>
+            </div>
+            <div>
+              <div className="sampleText" style={{ fontFamily: font.fontFamily }}>
+                {font.sampleText}            
+            </div>
+              <div className="fontSize-2">
+              </div>
+            </div>
+            <span className="fontDescript">
+              {font.description}
+            </span>
+            <span>
+              {/* <button>View Specimen</button>
+              <button>Download</button> */}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </React.Fragment>
+);
 
 export default App;
