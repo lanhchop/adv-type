@@ -1,3 +1,7 @@
+a{
+  text-decoration: none;
+}
+
 body{
   background: black;
   color: white;
@@ -41,7 +45,6 @@ body{
 
 .buttonDownload > a{
   color: #AE03FF;
-  text-decoration: none;
 }
 
 
@@ -65,7 +68,6 @@ body{
 
 .buttonSpecimen > a{
   color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
 }
 
 .description{
