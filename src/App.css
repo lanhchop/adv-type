@@ -18,16 +18,62 @@ body{
   float: right;
 }
 
-.description{
-  width: 484px;
-  height: 90px;
+.buttonContainer{
+  margin: 20px 0;
+}
 
+.buttonDownload{
+  border: 2px solid #AE03FF;
+  color: #AE03FF;
+  min-width: 184px;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   line-height: 23px;
   font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
 
+.buttonDownload > a{
+  color: #AE03FF;
+  text-decoration: none;
+}
+
+
+.buttonSpecimen{
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 9px 9px 0;
+  min-width: 184px;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.buttonSpecimen > a{
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.description{
+  width: 484px;
+  height: 90px;
+  font-family: Roboto;
+  line-height: 23px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -51,6 +97,7 @@ body{
 .fontFamily{
   font-family:Roboto;
   font-size:16px;
+  margin-bottom: 5px;
 }
 
 .fontPreview{
@@ -58,8 +105,9 @@ body{
   font-size: 192px;
   color: #FFFFFF;
   overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
-  padding-top:40px;
+  height: 200px;
 }
 
 .fontSize-1:before{
@@ -80,7 +128,7 @@ body{
   display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 107px;
-  margin: 19px 0;
+  margin: 19px 0 80px 0;
   padding: 0 97px 0 0;
 }
 
@@ -91,8 +139,12 @@ body{
   color: #FFFFFF;
   float: right;
   height: 192px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   line-height: 28px;
+}
+
+.backToTop{
+  display: none;
 }
 
 
@@ -100,6 +152,10 @@ body{
 
 
 @media only screen and (max-width: 600px) {
+  button{
+    margin: auto;
+  }
+
   .header {
     background-color:#AE03FF;
     height: 30px;
@@ -113,6 +169,28 @@ body{
   .about{
     color: rgba(255, 255, 255, 0.5);
     float: right;
+  }
+
+  .backToTop{
+    display: inline;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0;  
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 200%;
+  }
+
+  .buttonDownload{
+    width: 100%;
+  }
+  
+  .buttonSpecimen{
+    width: 100%;
   }
 
   .fontContainer{
@@ -148,7 +226,7 @@ body{
     display: grid;
     grid-template-columns:auto;
     column-gap: 0px;
-    margin: 19px 0;
+    margin: 19px 0 60px 0;
     padding: 0 0 0 0;
   }
   
@@ -159,7 +237,7 @@ body{
     overflow-y: auto;
     height: 190px;
     color: #FFFFFF;
-    margin:15px 0;
+    /* margin:15px 0; */
     padding-bottom: 0;
   }
 }

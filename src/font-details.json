@@ -1,11 +1,37 @@
 [
     {
-        "fontFamily":"Tangus",
+        "fontFamily":"Wiggle",
+        "author":"Brooke Cassity",
+        "year":2017,
+        "course":"Adv. Type",
+        "availChars":"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,./<>?;':[]\\{}|~!@#$%^&*()_+-=",
+        "description":"A blackletter typeface with a wiggly side. The curves of each letterform fits together, enabling tighter kerning which accentuates the feeling of movement. Great for display use on posters, books, shirts, hats, or wherever!",
+        "sampleText": "Let me put it this way, Mr. Amor. The 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error.",
+        "downloadSpecimen": "n/a",
+        "downloadFont": "n/a"
+    },
+
+    {
+        "fontFamily":"Aesop",
+        "author":"Andrew Mason",
+        "year":2017,
+        "course":"Adv. Type",
+        "availChars":"abcdefghijklmnopqrstuvwxyz",
+        "description":"AESOP is a light-hearted, light-weight sans serif in two weights from the future. It is the work of typographers in the 25th century working from preserved fragments of paper to reconstruct the lost art of handwriting. Some gaps are to be expected.",
+        "sampleText": "let me put it this way, mr. amor. the 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error.",
+        "downloadSpecimen": "n/a",
+        "downloadFont": "n/a"
+    },
+
+    {
+        "fontFamily":"lyra",
         "author":"Lanh Nguyen",
         "year":2018,
-        "course":"ART288",
-        "availChars":"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,./<>?;':[]\\{}|~!@#$%^&*()_+-=",
-        "description":"A silly little font",
-        "sampleText": "Let me put it this way, Mr. Amor. The 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error. Let me put it this way, Mr. Amor. The 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error."
+        "course":"Adv. Type",
+        "availChars":"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "description":"Just a sample text to take up some space here.",
+        "sampleText": "let me put it this way, mr. amor. the 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error.",
+        "downloadSpecimen": "n/a",
+        "downloadFont": "n/a"
     }
 ]
