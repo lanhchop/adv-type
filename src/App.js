@@ -20,13 +20,13 @@ const App = () => (
               <div className="fontPreview" style={{ fontFamily: font.fontFamily }}>
               {font.availChars}
               </div>
-              <div className="fontSize-1">
+              <div className="fontSize fontSize-1">
               </div>
             </div>
             <div>
-              <div className="sampleText" style={{ fontFamily: font.fontFamily }}>
+              <div className="sampleText" style={{ fontFamily: font.fontFamily }} >
                 {font.sampleText}            
-            </div>
+              </div>
               <div className="fontSize-2">
               </div>
             </div>

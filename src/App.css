@@ -47,11 +47,10 @@ body{
   color: #AE03FF;
 }
 
-
 .buttonSpecimen{
   border: 2px solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
-  margin: 0 9px 9px 0;
+  margin: 0 9px 11px 0;
   min-width: 184px;
   height: 45px;
   box-sizing: border-box;
@@ -110,6 +109,7 @@ body{
   overflow-y: hidden;
   white-space: nowrap;
   height: 200px;
+  padding-top: 10px;
 }
 
 .fontSize-1:before{
@@ -162,7 +162,7 @@ body{
     background-color:#AE03FF;
     height: 30px;
     line-height: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 36px;
     font-family: Roboto;
     font-size: 16px;
     padding: 0 15px;
@@ -195,8 +195,16 @@ body{
     width: 100%;
   }
 
+  .buttonContainer{
+    margin: 0;
+  }
+
   .fontContainer{
     padding: 0 15px;
+  }
+
+  .fontDescript{
+    margin: 30px 0;
   }
   
   .fontDetails{
@@ -218,6 +226,12 @@ body{
     overflow-x: auto;
     white-space: nowrap;
     box-sizing: border-box;
+    height: 110px; 
+    padding-top: 0px;
+  }
+
+  .fontSize{
+    margin: 15px 0 30px 0;
   }
 
   .fontSize-1:before{
@@ -239,7 +253,7 @@ body{
     overflow-y: auto;
     height: 190px;
     color: #FFFFFF;
-    /* margin:15px 0; */
+    margin-bottom:15px;
     padding-bottom: 0;
   }
 }
