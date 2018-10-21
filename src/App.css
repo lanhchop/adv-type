@@ -259,6 +259,13 @@ body{
   color:#AE03FF;
   font-family:Roboto;
   font-size:16px;
-  margin-bottom: 5px;
-  padding: 30px 15px;
+  left: 50%;
+  margin: 0;
+  margin-right: -50%;
+  position: absolute;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  text-align: center;
+  font-family: "Comic Sans MS";
 }

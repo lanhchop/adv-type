@@ -3,7 +3,11 @@ import '../App.css';
 
 const About = () => (
   <div className="aboutPage">
-    Lanh is the best person EVER.
+   <p>Designed by Brian Wiley</p>
+   <p>- -</p>
+   <p>Developed by Lanh Nguyen</p>
+   <p>- -</p>
+   <p>Build Process by Aaron Russell</p>
   </div>
 )
 
