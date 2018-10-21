@@ -1,7 +1,7 @@
 const fs = require('fs');
 const process = require('process');
 
-const fontsDirectory = 'src/fonts';
+const fontsDirectory = 'public/fonts';
 const cssOutputFilename = 'src/font-faces.css';
 
 const generateCss = filenames => {
@@ -9,7 +9,8 @@ const generateCss = filenames => {
   const fontFaceRules = filenames.map(filename =>
 `@font-face {
   font-family: "${filename.substring(0, filename.length - 4)}";
-  src: url("./fonts/${filename}");
+  src: url("/fonts/${filename}");
+  font-style: normal;
 }`
   );
 

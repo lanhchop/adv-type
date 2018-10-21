@@ -1,5 +1,6 @@
 build
 node_modules
 src/font-faces.css
-src/fonts/
+public/fonts/
+public/specimens
 **/DS_Store

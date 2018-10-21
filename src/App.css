@@ -1,5 +1,6 @@
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 body{
@@ -141,7 +142,6 @@ body{
   color: #FFFFFF;
   float: right;
   height: 192px;
-  /* margin-bottom: 40px; */
   line-height: 28px;
 }
 
@@ -174,17 +174,10 @@ body{
   }
 
   .backToTop{
-    display: inline;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    cursor: pointer;
-    padding: 0;  
-    border: none;
-    outline: none;
-    color: white;
-    border-radius: 200%;
+    right: 15px;
+    top: 620px;
+    display: inline;
   }
 
   .buttonDownload{
@@ -220,7 +213,7 @@ body{
   
   .fontPreview{
     border-right: 3px solid rgba(255, 255, 255, 0.7);
-    max-width: 290px;
+    max-width: 90vw;
     font-size: 96px;
     color: #FFFFFF;
     overflow-x: auto;
@@ -256,4 +249,14 @@ body{
     margin-bottom:15px;
     padding-bottom: 0;
   }
+}
+
+/* ====================================== */
+
+.aboutPage{
+  color:#AE03FF;
+  font-family:Roboto;
+  font-size:16px;
+  margin-bottom: 5px;
+  padding: 30px 15px;
 }
