@@ -46,28 +46,30 @@ body{
 
 .buttonDownload > a{
   color: #AE03FF;
+  display: block;
 }
 
 .buttonSpecimen{
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0 9px 11px 0;
-  min-width: 184px;
-  height: 45px;
-  box-sizing: border-box;
-  border-radius: 5px;
   background: none;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
   font-family: Roboto;
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  line-height: 23px;
-  font-size: 16px;
-  text-align: center;
+  height: 45px;
   letter-spacing: 0.05em;
+  line-height: 23px;
+  margin: 0 9px 11px 0;
+  min-width: 184px;
+  text-align: center;
 }
 
 .buttonSpecimen > a{
   color: rgba(255, 255, 255, 0.5);
+  display: block;
 }
 
 .description{
@@ -110,7 +112,7 @@ body{
   overflow-y: hidden;
   white-space: nowrap;
   height: 200px;
-  padding-top: 10px;
+  margin-top: -8px;
 }
 
 .fontSize-1:before{
@@ -240,7 +242,7 @@ body{
   }
   
   .sampleText{
-    width: 305;
+    /* width: 305px; */
     font-size: 24px;
     letter-spacing: 0.05em;
     overflow-y: auto;
