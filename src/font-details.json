@@ -1,47 +1,66 @@
 [
-        {
-        "fontFamily":"Wiggle",
-        "filename":"Wiggle.otf",
+    {
+        "fontFamily": "Wiggle",
+        "filename": "Wiggle.otf",
         "specimenFilename": "Wiggle.pdf",
-        "author":"Brooke Cassity",
-        "year":2017,
-        "course":"Adv. Type",
-        "availChars":"AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,./<>?;':[]\\{}|~!@#$%^&*()_+-=",
-        "description":"A blackletter typeface with a wiggly side. The curves of each letterform fits together, enabling tighter kerning which accentuates the feeling of movement. Great for display use on posters, books, shirts, hats, or wherever!",
+        "author": "Brooke Cassity",
+        "year": 2017,
+        "course": "Adv. Type",
+        "availChars": "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890,./<>?;':[]\\{}|~!@#$%^&*()_+-=",
+        "description": "A blackletter typeface with a wiggly side. The curves of each letterform fits together, enabling tighter kerning which accentuates the feeling of movement. Great for display use on posters, books, shirts, hats, or wherever!",
         "sampleText": "Let me put it this way, Mr. Amor. The 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error."
     },
-
     {
-        "fontFamily":"Aesop",
-        "filename":"Aesop.otf",
-        "author":"Andrew Mason",
-        "year":2017,
-        "course":"Adv. Type",
-        "availChars":"abcdefghijklmnopqrstuvwxyz",
-        "description":"AESOP is a light-hearted, light-weight sans serif in two weights from the future. It is the work of typographers in the 25th century working from preserved fragments of paper to reconstruct the lost art of handwriting. Some gaps are to be expected.",
+        "fontFamily": "Aesop",
+        "filename": "Aesop.otf",
+        "author": "Andrew Mason",
+        "year": 2017,
+        "course": "Adv. Type",
+        "availChars": "abcdefghijklmnopqrstuvwxyz",
+        "description": "AESOP is a light-hearted, light-weight sans serif in two weights from the future. It is the work of typographers in the 25th century working from preserved fragments of paper to reconstruct the lost art of handwriting. Some gaps are to be expected.",
         "sampleText": "let me put it this way, mr. amor. the 9000 series is the most reliable computer ever made. No 9000 computer has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error."
     },
-
     {
-        "fontFamily":"lyra",
-        "author":"Lanh Nguyen",
-        "filename":"lyra.ttf",
-        "year":2018,
-        "course":"Personal",
-        "availChars":"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-        "description":"Example text for the description",
+        "fontFamily": "lyra",
+        "author": "Lanh Nguyen",
+        "filename": "lyra.ttf",
+        "year": 2018,
+        "course": "Personal",
+        "availChars": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "description": "Example text for the description",
         "sampleText": "LET ME PUT IT THIS WAY, MR. AMOR. THE 9000 SERIES IS THE MOST RELIABLE COMPUTER EVER MADE. NO 9000 COMPUTER HAS EVER MADE A MISTAKE OR DISTORTED INFORMATION. WE ARE ALL, BY ANY PRACTICAL DEFINITION OF THE WORDS, FOOLPROOF AND INCAPABLE OF ERROR"
     },
 
     {
-        "fontFamily":"tangus",
-        "filename":"Tangus.ttf",
-        "author":"Lanh Nguyen",
-        "year":2018,
-        "course":"Graphic Design II",
-        "availChars":"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-        "description":"Just a sample text to take up some space here.",
+        "fontFamily": "Spoony",
+        "filename": "Spoony.ttf",
+        "author": "Robin Pinger",
+        "year": 2018,
+        "course": "Graphic Design II",
+        "availChars": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "description": "Just a sample text to take up some space here.",
+        "sampleText": "LET ME PUT IT THIS WAY, MR. AMOR. THE 9000 SERIES IS THE MOST RELIABLE COMPUTER EVER MADE. NO 9000 COMPUTER HAS EVER MADE A MISTAKE OR DISTORTED INFORMATION. WE ARE ALL, BY ANY PRACTICAL DEFINITION OF THE WORDS, FOOLPROOF AND INCAPABLE OF ERROR"
+    },
+
+    {
+        "fontFamily": "BRAINDRAIN",
+        "filename": "BRAINDRAIN.ttf",
+        "author": "Chloe Pampush",
+        "year": 2018,
+        "course": "Graphic Design II",
+        "availChars": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "description": "Just a sample text to take up some space here.",
+        "sampleText": "LET ME PUT IT THIS WAY, MR. AMOR. THE 9000 SERIES IS THE MOST RELIABLE COMPUTER EVER MADE. NO 9000 COMPUTER HAS EVER MADE A MISTAKE OR DISTORTED INFORMATION. WE ARE ALL, BY ANY PRACTICAL DEFINITION OF THE WORDS, FOOLPROOF AND INCAPABLE OF ERROR"
+    },
+
+    {
+        "fontFamily": "tangus",
+        "filename": "Tangus.ttf",
+        "author": "Lanh Nguyen",
+        "year": 2018,
+        "course": "Graphic Design II",
+        "availChars": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "description": "Just a sample text to take up some space here.",
         "sampleText": "LET ME PUT IT THIS WAY, MR. AMOR. THE 9000 SERIES IS THE MOST RELIABLE COMPUTER EVER MADE. NO 9000 COMPUTER HAS EVER MADE A MISTAKE OR DISTORTED INFORMATION. WE ARE ALL, BY ANY PRACTICAL DEFINITION OF THE WORDS, FOOLPROOF AND INCAPABLE OF ERROR"
     }
-
 ]

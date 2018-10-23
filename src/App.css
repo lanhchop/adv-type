@@ -112,7 +112,7 @@ body{
   overflow-y: hidden;
   white-space: nowrap;
   height: 200px;
-  margin-top: -8px;
+  /* margin-top: -8px; */
 }
 
 .fontSize-1:before{
@@ -145,6 +145,7 @@ body{
   float: right;
   height: 192px;
   line-height: 28px;
+  padding-bottom: 8px;
 }
 
 .backToTop{
