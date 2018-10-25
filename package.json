@@ -4,6 +4,7 @@
   "description": "A site that demos custom fonts",
   "license": "MIT",
   "private": "true",
+  "homepage": "http://bsu.gd/type",
   "contributors": [
     {
       "name": "Lanh Nguyen",
