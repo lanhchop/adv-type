@@ -7,7 +7,7 @@ import './font-faces.css';
 import './index.css';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={'/type'}>
         <App />
     </BrowserRouter>,
     document.getElementById('root'));
