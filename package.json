@@ -16,10 +16,10 @@
     }
   ],
   "scripts": {
-    "build": "react-scripts build",
+    "build": "NODE_ENV=production node generate-font-faces.js && react-scripts build",
     "generate": "node generate-font-faces.js",
-    "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom"
+    "start": "NODE_ENV=development node generate-font-faces.js && react-scripts start",
+    "test": "NODE_ENV=test && react-scripts test --env=jsdom"
   },
   "dependencies": {
     "react": "^16.4.2",
