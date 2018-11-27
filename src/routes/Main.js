@@ -7,11 +7,11 @@ import '../App.css';
 
 const Main = () => (
     <React.Fragment>
-        <div className="header">
+        <div className="header navbar">
             <span>Boise State GDes Typography</span>
             <span className="about"><Link to='/About'>About</Link></span>
         </div>
-        <div>
+        <div className="padding">
             {fonts.map((font, index) => (
                 <div className="fontContainer" key={index}>
 

@@ -5,11 +5,13 @@ const fontsDirectory = 'public/fonts';
 const cssOutputFilename = 'src/font-faces.css';
 
 const generateCss = filenames => {
+  const homepage = process.env.NODE_ENV === 'production' ? '/type' : '';
+
   // Generate a @font-face rule for each of the font files.
   const fontFaceRules = filenames.map(filename =>
 `@font-face {
   font-family: "${filename.substring(0, filename.length - 4)}";
-  src: url("/fonts/${filename}");
+  src: url("${homepage}/fonts/${filename}");
   font-style: normal;
 }`
   );
@@ -39,8 +41,8 @@ fs.readdir(fontsDirectory, (err, filenames) => {
   // Ignore files that aren't TTFs or OTFs.
   const ttfFilenames = filenames.filter(filename => {
     const extension = filename.substring(filename.lastIndexOf('.') + 1);
-    if (!/(ttf|otf)$/ig.test(extension)) {
-      console.warn(`'${filename}' is not a TTF or OTF file and will be ignored.`);
+    if (!/(ttf|otf|zip)$/ig.test(extension)) {
+      console.warn(`'${filename}' is not a TTF, OTF, or ZIP file and will be ignored.`);
       return false;
     } else {
       return true;
