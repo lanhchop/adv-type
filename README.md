@@ -5,7 +5,7 @@
 
 #### Install [Node.js](http://nodejs.org/)
 ```sh
-$ git clone git:https://github.com/lanhchop/adv-type
+$ git clone git:https://github.com/lanhchop/adv-type.git
 $ cd adv-type
 $ npm install
 ```
