@@ -66,7 +66,8 @@ Only truetype and opentype files are supported. Ensure that there are no
 other characters besides alphabetical letters or numbers. 
 
 If the typfaces are named `Typeface-Regular.otf`, omit the "-Regular" by 
-renaming the file, we will talk about font-style later.
+renaming the file. When the font-faces.css is generated, it'll automatically
+set the font style to regular. 
 
 ### Adding New Typefaces
 
