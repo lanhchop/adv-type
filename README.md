@@ -22,7 +22,7 @@ you can just use `npm` to get it all to work.
 Next, you can clone this repository using Git to get it set up on your station.
 
 ```sh
-$ git clone git://github.com/lanhchop/adv-type
+$ git clone git://github.com/lanhchop/adv-type.git
 $ cd adv-type
 ```
 
