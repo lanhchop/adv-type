@@ -88,7 +88,14 @@ You will be manually adding the description to each typefaces in
 },
 ```
 
-This will need to be added for each new typeface. The following must be ran each time a new typeface or group of typefaces are added so an updated `font-faces.css` can be generated with the new typeface: 
+This will need to be added for each new typeface. 
+
+You'll need to be in the right directory (adv-type) to execute the following commands. To get there, enter the following into terminal:
+
+```cd /Users/bwiley/adv-type
+```
+
+Then following must be ran each time a new typeface or group of typefaces are added so an updated `font-faces.css` can be generated with the new typeface: 
 
 ```sh
 $ npm run generate
