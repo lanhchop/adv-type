@@ -92,7 +92,8 @@ This will need to be added for each new typeface.
 
 You'll need to be in the right directory (adv-type) to execute the following commands. To get there, enter the following into terminal:
 
-```cd /Users/bwiley/adv-type
+```sh
+cd /Users/bwiley/adv-type
 ```
 
 Then following must be ran each time a new typeface or group of typefaces are added so an updated `font-faces.css` can be generated with the new typeface: 
